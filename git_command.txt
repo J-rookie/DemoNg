@@ -26,4 +26,6 @@ git pull //更新文件自动合并
 git fetch //下载远端文件 
 	git merge origin/master //手动合并
 ---------------------开源项目协作--------------------
+fork 复制库为自己的库
+pull request 请求修改 
 	
