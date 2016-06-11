@@ -32,5 +32,5 @@ pull request 请求修改
 git branch //查看分支
 git branch name //创建分支name
 git checkout name //切换分支
-git checkout -b name //穿件分支name并切换到该分支
+git checkout -b name //穿件分支name并切换到该分支1
 	
