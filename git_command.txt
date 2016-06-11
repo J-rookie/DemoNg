@@ -1,0 +1,24 @@
+git clone [url] //从github下载库
+git config --global uers.name //设置贡献者名字
+git config --global uers.email //设置贡献者邮箱
+git config --list //查看所有配置项
+git status //查看状态
+git add name或者. //将工作区的内容添加到暂存区 name为单个输入 .为所有更改文件跟新
+git commit //将暂存区内容添加到 版本库 -m 快速添加注释 -a -m 跳过git add 直接将工作区内容添加到版本库 并添加注释
+git diff //对比命令 默认对比工作区和暂存区 
+	git diff --cached(--staged) //对比暂存区和版本库
+	git diff name //对比工作区和版本库 name为版本库的名字
+git reset HEAD name //撤销 让已经add到暂存区的文件 回到工作区 name 文件名
+git checkout -- name //撤销 让工作区 返回到版本库的状态 name 文件名
+git commit -m --amend //撤销 上一次的提交 把暂存区的内容和上一次提交内容 一起重新提交
+git rm name //工作区文件删除时，清除暂存区的文件
+git rm -f name //清除暂存区和工作区的文件
+git rem --cached name //清除暂存区的文件
+git checkout commit_id name //恢复文件 commit码为版本库修改吗 可以不写全 name 文件名
+git reset --hard commit_id //恢复版本 commit码为版本库修改吗 可以不写全
+	git reset --hard HEAD^ //返回上一个版本
+	git reset --hard HEAD~3 //返回以前版本 ~数字为返回第几个版本
+git reflog  //前几步操作 状态码
+---------------------同步远程--------------------
+git remote //查看项目名
+git push name1 name2 //同步到远程服务器 name1 本地项目名称 name2 同步分支名字
