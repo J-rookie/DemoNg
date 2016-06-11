@@ -36,4 +36,6 @@ git checkout -b name //创建分支name并切换到该分支
 git branch --merged //查询和当前分支合并的分支有哪些
 git branch --no-merged //查询没和当前分支合并的分支有哪些
 git barnch -d name //删除name分支（一般情况只允许删除已经合并的分支）
-git barnch -D name //强制删除name分支（可以删除没有合并的分支）	
+git barnch -D name //强制删除name分支（可以删除没有合并的分支）
+git tag	//查看标签
+git tag value //设置标签value
