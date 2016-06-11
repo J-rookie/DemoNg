@@ -33,4 +33,6 @@ git branch //查看分支
 git branch name //创建分支name
 git checkout name //切换分支
 git checkout -b name //创建分支name并切换到该分支
+git branch --merged //查询和当前分支合并的分支有哪些
+git branch --no-merged //查询没和当前分支合并的分支有哪些
 	
